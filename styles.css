@@ -105,14 +105,60 @@ box-shadow: 0 4px 6px rgb(0,0,0,0.1);
 
 }
 
-/* responsive */
-@media screen and (max-width:768px){
+/* Media Queries */
+
+/* For small devices (mobile phones, 600px and down) */
+@media screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+    }
+
     .container {
         flex-direction: column;
+        padding: 10px;
     }
 
     .patients-section, .diagnosis-section, .profile-section {
-        flex: none;
         width: 100%;
+    }
+}
+
+/* For medium devices (tablets, 600px to 900px) */
+@media screen and (min-width: 601px) and (max-width: 900px) {
+    .navbar {
+        padding: 15px;
+    }
+
+    .nav-links {
+        gap: 15px;
+    }
+
+    .container {
+        flex-direction: row;
+    }
+
+    .patients-section, .profile-section {
+        flex: 1;
+    }
+
+    .diagnosis-section {
+        flex: 2;
+    }
+}
+
+/* For large devices (desktops, 900px and above) */
+@media screen and (min-width: 901px) {
+    .container {
+        padding: 20px;
+    }
+
+    .patients-section, .profile-section, .diagnosis-section {
+        padding: 20px;
     }
 }
