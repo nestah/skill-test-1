@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>HTML Document</title>
+</head>
+<body>
+    <!-- navbar -->
+     <nav class="navbar">
+ <div class="logo">
+    <img src="TestLogo.svg" alt="logo" class="logo-img"/>
+</div>
+    <ul class="nav-links">
+    <li><a href="#">Overview</a></li>
+    <li><a href="#">Patients</a></li>
+    <li><a href="#">Schedule</a></li>
+    <li><a href="#">Messages</a></li>
+    <li><a href="#">Transactions</a></li>
+    </ul>
+ <div class="profile-dropdown">
+    <img src="profile-pic.jpg" alt="profile" class="profile-pic"/>
+    <div class="dropdown-content">
+        <a href="#">Profile Settings</a>
+        <a href="#">Logout</a>
+    </div>
+ </div>
+
+ 
+     </nav>
+     <!-- Main section -->
+      <!-- left section -->
+      <div class="container">
+        <section class="patients-section">
+            <h2>Patients</h2>
+        </section>
+    <!-- center section -->
+     <section class="diagnosis-section">
+        <h2>Diagnosis</h2>
+        <canvas id="bpChart" width="400" height="200"></canvas>
+     </section>
+
+     <!-- right section -->
+      <section class="profile-section">
+        <h2>Profile</h2>
+      </section>
+      </div>
+
+      <script src="test.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</body>
+</html>
